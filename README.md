@@ -1,8 +1,8 @@
-# Task manager
+# Task manager app
 
 I'm a person who passionate about my own productivity. I want to
 manage my tasks and projects more effectively. I need a simple tool that
-supports me in controlling my task-flow
+supports me in controlling my task-flow.
 
 **Functional requirements**
 - Create/​​update/​​delete projects 
@@ -14,17 +14,17 @@ supports me in controlling my task-flow
 
 **Technical requirements**
 1. It should be a WEB application 
-2. Client side used: HTML, CSS, Boorstrap, JavaScript, JQuery, Stimulus, Webpack 
-3.​ For aserver side any languageas Ruby
-4.​ It should have a client side and server side validation
-5.​ It should look like on screens Design
+2. Client side used: HTML, CSS, Boorstrap, JavaScript, JQuery, Stimulus, Webpack
+3. For a server side use Ruby language
+4. It should have a client side and server side validation
+5. It should look like on screens Design
 
 **Additional requirements**
 - It should work like one page WEB application and should use AJAX technology, load and submit data without reloading a page.
 - It should have user authentication solution and a user should only have access to their own projects and tasks.
 - It should have automated tests for the all functionality
 
-### SQL task
+## SQL task
 
 **Given tables:**
 1. tasks (id, name, status, project_id)
