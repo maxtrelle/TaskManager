@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
-  root to: "projects#index"
+  root to: "pages#home"
+  get 'pages/home'
+  get 'pages/about'
+  get 'pages/contacts'
   resources :projects do
     resources :tasks
   end
