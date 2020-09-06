@@ -1,17 +1,31 @@
-<h1>Projects</h1>
+<div class="card">
+  <div class="card-header d-flex justify-content-between">
+    <h3>Projects</h3>
+    <%= link_to 'New Project', new_project_path, class: 'btn btn-primary' %>
+  </div>
 
-<div class="card-header d-flex justify-content-between">
-  <span>Projects</span>
-  <%= link_to 'New Project', new_project_path, class: 'btn btn-primary' %>
+  <div class="card-body">
+    <ul class="list-group">
+      <% @projects.each do |project| %>
+        <li class="list-group-item d-flex justify-content-between mb-3">
+          <div>
+            <h3 class="m-0">
+              <%= link_to project.name, project %>
+              <span class="badge badge-<%= project.badge_color %>"><%= project.status %></span>
+            </h3>
+            <small>Completed: <%= project.completed_tasks %>/<%= project.total_tasks %></small>
+          </div>
+          <div>
+            <%= link_to 'Edit Project', edit_project_path(project), class: 'btn btn-secondary' %>
+          </div>
+        </li>
+      <% end %>
+    </ul>
+  </div>
 </div>
 
-<ul class="list-group">
-  <% @projects.each do |project| %>
-    <li class="list-group-item">
-      <%= link_to project.name, project %>
-    </li>
-  <% end %>
-</ul>
 
 
 
+
+</div>
